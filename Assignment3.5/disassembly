@@ -1,0 +1,18 @@
+
+hello-world.o:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	31 db                	xor    %ebx,%ebx
+   2:	b8 04 00 00 00       	mov    $0x4,%eax
+   7:	31 db                	xor    %ebx,%ebx
+   9:	43                   	inc    %ebx
+   a:	8d 0d 00 00 00 00    	lea    0x0,%ecx
+  10:	8b 15 0e 00 00 00    	mov    0xe,%edx
+  16:	cd 80                	int    $0x80
+  18:	31 c0                	xor    %eax,%eax
+  1a:	40                   	inc    %eax
+  1b:	31 db                	xor    %ebx,%ebx
+  1d:	cd 80                	int    $0x80
